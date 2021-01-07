@@ -120,7 +120,7 @@ function openChatbox(id){
 
 function signout(){
   localStorage.removeItem('user');
-  location.replace('/')
+  window.location.href = "https://rahutwr33.github.io/chatApp";
 }
 
 function sendMessage(){
