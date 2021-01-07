@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded",  (event) =>{
       });
     });
   }else{
-   window.location.href = "/chatApp";
+   window.location.href = "https://rahutwr33.github.io/chatApp";
   }
   db.collection("chat").onSnapshot(function(querySnapshot) {
      if(chatboxopen){
