@@ -118,7 +118,7 @@ function openChatbox(id){
 
 function signout(){
   localStorage.removeItem('user');
-  location.replace('/')
+  location.replace('/chatApp')
 }
 
 function sendMessage(){
