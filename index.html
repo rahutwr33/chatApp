@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Chat System</title>
+  <link rel="stylesheet" href="./index.css">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet"
+    id="bootstrap-css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" type="text/css"
+    rel="stylesheet">
+  <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-firestore.js"></script>
+</head>
+
+<body>
+  <div style="display: flex;justify-content: center;flex: 1;align-items: center;height: 100%;flex-direction: column;">
+     <h3 style="text-align: center;">Enter user</h3>
+      <div class="column" >
+        <div style="justify-content: center;flex: 12;align-items: center;height: 100%;">
+          <div>
+            Username<input type="text" value="" name="username" id="username" autocomplete="off" class="form-control">
+          </div>
+          <button style="margin-top: 10px;" type="button" id="btnsubmit" class="btn btn-primary" onclick="saveUser()">Save</button>
+         </div>
+        </div>
+  </div>
+  <script>
+    var firebaseConfig = {
+      apiKey: "AIzaSyBFSL3GMmdTTN5y-ej_ILRI9WSMIRMTmAU",
+      authDomain: "chatsystem-edf09.firebaseapp.com",
+      projectId: "chatsystem-edf09",
+      storageBucket: "chatsystem-edf09.appspot.com",
+      messagingSenderId: "419215213191",
+      appId: "1:419215213191:web:a39f11e405039772ff2e22"
+    };
+    firebase.initializeApp(firebaseConfig);
+  </script>
+  <script src="./index.js"></script>
+
+</body>
+
+</html>
