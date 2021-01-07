@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded",  (event) =>{
       });
     });
   }else{
-   window.location.href = "/";
+   window.location.href = "chatApp";
   }
   db.collection("chat").onSnapshot(function(querySnapshot) {
      if(chatboxopen){
