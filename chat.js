@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded",  (event) =>{
       });
     });
   }else{
-    location.replace('chatApp')
+    location.replace('/')
   }
   db.collection("chat").onSnapshot(function(querySnapshot) {
      if(chatboxopen){
@@ -120,7 +120,7 @@ function openChatbox(id){
 
 function signout(){
   localStorage.removeItem('user');
-  location.replace('chatApp')
+  location.replace('/')
 }
 
 function sendMessage(){
