@@ -15,12 +15,13 @@
   <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-firestore.js"></script>
 </head>
+
 <body>
   <div class="container">
-   <div class="heading_avatar">
-    <h3 class="text-center user_current" id="current_user">Loading...</h3>
-    <button class="btn btn-primary custombtn" onclick="signout()">SignOut</button>
-   </div>
+    <div class="heading_avatar">
+      <h3 class="text-center user_current" id="current_user">Loading...</h3>
+      <button class="btn btn-primary custombtn" onclick="signout()">SignOut</button>
+    </div>
     <div class="messaging">
       <div class="inbox_msg">
         <div class="inbox_people">
@@ -42,11 +43,11 @@
         <div class="mesgs" style="display: none;">
           <div class="msg_history">
             <div class="headind_srch">
-            <div class=" row avatar_heading" id="userprofile">
-              <div class="incoming_msg_img"> <img src="https://ptetutorials.com/images/user-profile.png" alt="sunil">
+              <div class=" row avatar_heading" id="userprofile">
+                <div class="incoming_msg_img"> <img src="https://ptetutorials.com/images/user-profile.png" alt="sunil">
+                </div>
+                <h4 id="nameofuser"></h4>
               </div>
-              <h4 id="nameofuser" ></h4>
-            </div>
             </div>
             <div id="chat_list">
               <!-- <div class="incoming_msg">
@@ -60,13 +61,14 @@
                   </div>
                 </div>
               </div> -->
-             
+
             </div>
           </div>
           <div class="type_msg">
             <div class="input_msg_write">
               <input type="text" id="write_msg" class="write_msg" placeholder="Type a message" />
-              <button onclick="sendMessage()" class="msg_send_btn" type="button"><i class="fa fa-paper-plane-o" aria-hidden="true"></i></button>
+              <button onclick="sendMessage()" class="msg_send_btn" type="button"><i class="fa fa-paper-plane-o"
+                  aria-hidden="true"></i></button>
             </div>
           </div>
         </div>
@@ -76,16 +78,16 @@
   </div>
   <script>
     var firebaseConfig = {
-      apiKey: "AIzaSyBFSL3GMmdTTN5y-ej_ILRI9WSMIRMTmAU",
-      authDomain: "chatsystem-edf09.firebaseapp.com",
-      projectId: "chatsystem-edf09",
-      storageBucket: "chatsystem-edf09.appspot.com",
-      messagingSenderId: "419215213191",
-      appId: "1:419215213191:web:a39f11e405039772ff2e22"
+      apiKey: "dawdawd",
+      authDomain: "cdawdawd",
+      projectId: "cdawdawd9",
+      storageBucket: "chatsysawdawdcom",
+      messagingSenderId: "4wadawd91",
+      appId: "1:419dawda9772ff2e22"
     };
     firebase.initializeApp(firebaseConfig);
   </script>
-    <script src="./chat.js"></script>
+  <script src="./chat.js"></script>
 </body>
 
 </html>
